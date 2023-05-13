@@ -12,9 +12,14 @@ type Country = {
   name: {
     common: string;
   };
+  [key: string]: any;
   region: string;
   flag: string;
+  population: number;
+  area: number;
+  flags: { png: string; alt: string };
 };
+
 
 export default function Country() {
   const [countries, setCountries] = useState<Country[]>([]);

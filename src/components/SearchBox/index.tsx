@@ -12,7 +12,7 @@ const SearchBox: FC<SearchBoxProps> = ({ handler }) => {
 
   return (
     <>
-      <input onChange={onHandler} placeholder="Search Country Name" />
+      <input onChange={onHandler} placeholder="Search" />
     </>
   );
 };

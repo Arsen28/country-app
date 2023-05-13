@@ -1,4 +1,6 @@
 select {
     padding: 8px;
+    border: 2px solid rgb(201 196 196);
+    border-radius: 4px;
   }
   

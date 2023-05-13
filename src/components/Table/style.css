@@ -6,4 +6,28 @@ table {
   table td {
     padding: 10px;
   }
-  
+
+  table :last-child td {
+    text-align: center;
+  }
+
+  table tr th {
+    color: rgb(165, 160, 160);
+    background: rgb(237 237 237);
+  }
+
+  button {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #e60000;
+    color: #fff;
+  }

@@ -16,7 +16,7 @@ const FilterBox: FC<FilterBoxProps> = ({ handler }) => {
     <>
       <select onChange={onHandler}>
         <option value="none" key={"none"}>
-          All Regions
+          Region
         </option>
         {regions?.map((region, index) => (
           <option value={region} key={index}>

@@ -6,8 +6,9 @@ type RowType = {
   region: string;
   population: number;
   area: number;
-  flags: { png: string; alt: string };
   flag: string;
+  flags: { png: string; alt: string };
+
 };
 
 type Props = {
@@ -25,7 +26,7 @@ export default function Table({ rows, removeHandler }: Props): JSX.Element {
   return (
     <>
       <div>
-        <table className="table" border={1}>
+        <table border={1}>
           <thead>
             <tr>
               <th>Country Name</th>
@@ -53,7 +54,7 @@ export default function Table({ rows, removeHandler }: Props): JSX.Element {
                   </td>
                   <td>
                     <button onClick={() => removeHandler(row?.flag)}>
-                      Remove
+                     X
                     </button>
                   </td>
                 </tr>
